@@ -4,7 +4,7 @@ const photosRouter = require('./routers/photos');
 require('./db/connection');
 
 const app = express();
-const PORT = process.env.PORT || 3300;
+const PORT = process.env.PORT || 3400;
 
 app.use(express.static(path.join(__dirname, '..', 'build')));
 app.use(photosRouter);
