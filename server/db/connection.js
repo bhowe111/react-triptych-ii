@@ -1,14 +1,17 @@
 const mongoose = require('mongoose');
 
 mongoose
-  .connect('mongodb://127.0.0.1:27017/react-triptych', {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-  })
+  .connect(
+    'mongodb+srv://dbUser:dbUserPassword@cluster0.ibodv.mongodb.net/react-triptych?retryWrites=true&w=majority',
+    {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false
+    }
+  )
 
   .then(() => {
-    console.log('MongoDB connected');
+    console.log('MongoDB rootin n tootin on Atlas');
   })
   .catch((err) => console.log(err));
