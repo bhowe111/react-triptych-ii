@@ -20,15 +20,33 @@ const Gallery = ({ errors, photos, dispatch }) => {
   }, [photos]);
 
   return (
-    <div className="photos-list">
-      {errors && errors.get_error && (
-        <p className="errorMsg centered-message">{errors.get_error}</p>
-      )}
-      {isLoading ? (
-        <div className="loading-msg centered-message">Loading...</div>
-      ) : (
-        photos.map((photo) => <Photo key={photo._id} id={photo._id} />)
-      )}
+    <div>
+      <section className="gallery">
+        <div className="dark-overlay">
+          <div className="landing-inner">
+            <div className="gallery-row">
+              <div className="gallery-column">
+                <div className="photos-list">
+                  {errors && errors.get_error && (
+                    <p className="errorMsg centered-message">
+                      {errors.get_error}
+                    </p>
+                  )}
+                  {isLoading ? (
+                    <div className="loading-msg centered-message">
+                      Loading...
+                    </div>
+                  ) : (
+                    photos.map((photo) => (
+                      <Photo key={photo._id} id={photo._id} />
+                    ))
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
