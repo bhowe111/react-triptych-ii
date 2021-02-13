@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../img/logo|||.png';
 // import routes from '../config/routes';
 import AppRouter from '../router/AppRouter';
+import AuthNav from './auth-nav';
 
 function Navbar(props) {
   return (
@@ -29,10 +30,7 @@ function Navbar(props) {
           </Link>
         </li>
         <li className="navLi">
-          <Link to="/login">
-            <i className="fas fa-sign-out-alt"></i>
-            <span className="hide-sm"> Logout</span>
-          </Link>
+          <AuthNav />
         </li>
       </ul>
     </nav>
