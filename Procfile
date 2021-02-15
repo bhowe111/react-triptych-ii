@@ -1,1 +1,1 @@
-web: node ./app/client/build/index.html
+web: node ./client/build/index.html
