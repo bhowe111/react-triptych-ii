@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Brand from '../img/triptych_brand_white.png';
 import Navbar from './Navbar';
 
@@ -13,7 +13,7 @@ class About extends React.Component {
           <div className="dark-overlay">
             <div className="landing-inner">
               <h1 className="x-large">
-                <img src={Brand} />
+                <img src={Brand} alt="triptych logo" />
               </h1>
               <div>
                 <p className="lead">trip·tych /ˈtriptik/</p>

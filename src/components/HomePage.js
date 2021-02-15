@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Brand from '../img/triptych_brand_white.png';
 import Navbar from './Navbar';
 import Footer from './Footer';
