@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Logo from '../img/logo|||.png';
 // import routes from '../config/routes';
 import AppRouter from '../router/AppRouter';
-import AuthNav from './auth-nav';
 
 function Navbar(props) {
   return (
@@ -28,9 +27,6 @@ function Navbar(props) {
             <i className="fas fa-user"></i>
             <span className="hide-sm"> Dashboard</span>
           </Link>
-        </li>
-        <li className="navLi">
-          <AuthNav />
         </li>
       </ul>
     </nav>

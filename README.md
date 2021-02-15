@@ -1,3 +1,15 @@
+# Welcome to Triptych
+
+Triptych is a photo gallery app. Currently it does just that - allow users to upload photos into a gallery.
+
+Eventually it will be geared towards art students and appreciators for comparative juxtaposition, or critical study of individual works. It will also incorporate elements of social media.
+
+## Known issues
+
+• Clicking an image should present a modal popup of that image.
+
+# Standard Readme Info
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -7,7 +19,7 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3300](http://localhost:3300) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
