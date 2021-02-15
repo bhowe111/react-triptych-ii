@@ -5,6 +5,7 @@ import Gallery from '../components/Gallery';
 import NotFoundPage from '../components/NotFoundPage';
 import About from '../components/About';
 import UploadForm from '../components/UploadForm';
+import Dashboard from '../components/Dashboard';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const AppRouter = () => (
         <Route component={Gallery} path="/gallery" />
         <Route component={About} path="/about" />
         <Route component={UploadForm} path="/upload" />
+        <Route component={Dashboard} path="/dashboard" />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

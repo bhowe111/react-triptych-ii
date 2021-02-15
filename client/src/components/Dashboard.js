@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Navbar from './Navbar';
 
-class Dashboard extends React.Component {
-  state = {};
-
-  render() {
-    return (
+const Dashboard = () => {
+  return (
+    <>
+      <Navbar />
       <section className="container about">
         <div className="dark-overlay">
           <div className="landing-inner">
@@ -26,8 +26,8 @@ class Dashboard extends React.Component {
           </div>
         </div>
       </section>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default Dashboard;
